@@ -18,6 +18,7 @@ html,
 
 .content {
 	max-width: 600px;
+	height: 100%;
 	margin: 0 auto;
 }
 /*
@@ -27,10 +28,11 @@ Nav
 	text-align: left;
 	width: 100%;
 	max-width: 600px;
-	border-left: 1px solid rgb(235, 238, 240);
-	border-right: 1px solid rgb(235, 238, 240);
+	border-left: 1px solid #00cdff;
+	border-right: 1px solid #00cdff;
 	box-sizing: border-box;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #00cdff;
+	border-top: 1px solid #00cdff;
 	/*padding: 20px 40px;
 	border-bottom: 1px solid #ccc;***/
 }
@@ -57,13 +59,13 @@ Post
 	text-align: left;
 	width: 100%;
 	max-width: 600px;
-	border-left: 1px solid rgb(235, 238, 240);
-	border-right: 1px solid rgb(235, 238, 240);
+	border-left: 1px solid #00cdff;
+	border-right: 1px solid #00cdff;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	padding: 10px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #00cdff;
 }
 .home .post_form .my_icon {
 	width: 80px;
@@ -100,7 +102,7 @@ Post
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	border-top: 1px solid rgb(235, 238, 240);
+	border-top: 1px solid #00cdff;
 	padding-top: 8px;
 	float: right;
 }
@@ -144,6 +146,10 @@ Post
 	right: 15px;
 	color: white;
 }
+.space {
+	border-left: 1px solid #00cdff;
+	border-right: 1px solid #00cdff;
+}
 .posts {
 	max-width: 600px;
 	height: 100%;
@@ -156,11 +162,12 @@ Post
 .posts li {
 	position: relative;
 	display: flex;
-	border-bottom: 1px solid #ccc;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #00cdff;
+	border-left: 1px solid #00cdff;
+	border-right: 1px solid #00cdff;
 	padding: 20px 40px;
 	list-style: none;
+	border-top: 1px solid #00cdff;
 }
 .post_img {
 	display: block;
@@ -181,8 +188,8 @@ Post
 	position: absolute;
 	top: 40px;
 	right: 15px;
-	border: 1px solid #ccc;
-	background-color: white;
+	/* border: 1px solid #00cdff;
+	background-color: #00cdff; */
 	padding: 10px 15px;
 	font-size: 13px;
 	border-radius: 3px;
@@ -193,7 +200,7 @@ Post
 }
 .post-img {
 	border-radius: 10px;
-	border: 1px solid #ccc;
+	border: 1px solid #00cdff;
 	margin-bottom: 10px;
 	width: 90%;
 }
@@ -240,4 +247,20 @@ Post
 	.posts li .name_body .name {
 		font-size: 20px;
 	}
+}
+.cancel-anchor .cancel-button{
+	border: 1px solid rgb(29, 161, 242);
+    background-color: rgb(29, 161, 242);
+	width: 20%;
+	margin-left: 10px;
+	border-radius: 3px;
+	color: white;
+}
+#update-button{
+	border: 1px solid rgb(29, 161, 242);
+    background-color: rgb(29, 161, 242);
+	width: 20%;
+	
+	border-radius: 3px;
+	color: white;
 }
